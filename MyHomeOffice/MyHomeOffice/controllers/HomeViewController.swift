@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    let myStoryBoard = UIStoryboard(name: "home", bundle: nil)
     var rowsList = [String]()
     
     override func viewDidLoad() {
@@ -21,6 +22,16 @@ class HomeViewController: UIViewController {
         
         rowsList = ["Face ID"]
     }
+}
+
+private extension HomeViewController {
+    
+    func toFaceIdPage() {
+        if let vc = myStoryBoard.instantiateViewController(identifier: "FI_HomeViewController") as? FI_HomeViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
@@ -46,6 +57,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        //
+        if indexPath.row == 0 {
+            toFaceIdPage()
+        }
     }
 }

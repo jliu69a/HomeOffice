@@ -17,6 +17,9 @@
 		FE957B0B2726EEC000C933E0 /* MyHomeOfficeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE957B0A2726EEC000C933E0 /* MyHomeOfficeUITests.swift */; };
 		FE957B1B2726EF5D00C933E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE957B1A2726EF5D00C933E0 /* HomeViewController.swift */; };
 		FE957B1D2726EF7800C933E0 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE957B1C2726EF7800C933E0 /* home.storyboard */; };
+		FE957B202726F24F00C933E0 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE957B1F2726F24F00C933E0 /* LocalAuthentication.framework */; };
+		FE957B232726F28E00C933E0 /* FI_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE957B222726F28E00C933E0 /* FI_HomeViewController.swift */; };
+		FE957B262726F39F00C933E0 /* FI_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE957B252726F39F00C933E0 /* FI_Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		FE957B0C2726EEC000C933E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE957B1A2726EF5D00C933E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FE957B1C2726EF7800C933E0 /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		FE957B1F2726F24F00C933E0 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		FE957B222726F28E00C933E0 /* FI_HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FI_HomeViewController.swift; sourceTree = "<group>"; };
+		FE957B252726F39F00C933E0 /* FI_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FI_Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE957B202726F24F00C933E0 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +94,7 @@
 				FE957AFE2726EEC000C933E0 /* MyHomeOfficeTests */,
 				FE957B092726EEC000C933E0 /* MyHomeOfficeUITests */,
 				FE957AE62726EEBF00C933E0 /* Products */,
+				FE957B1E2726F24F00C933E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +116,7 @@
 				FE957AEC2726EEBF00C933E0 /* ViewController.swift */,
 				FE957AEE2726EEBF00C933E0 /* Main.storyboard */,
 				FE957B182726EF1E00C933E0 /* controllers */,
+				FE957B242726F34D00C933E0 /* Utils */,
 				FE957B192726EF3300C933E0 /* storyboards */,
 				FE957AF12726EEC000C933E0 /* Assets.xcassets */,
 				FE957AF32726EEC000C933E0 /* LaunchScreen.storyboard */,
@@ -138,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				FE957B1A2726EF5D00C933E0 /* HomeViewController.swift */,
+				FE957B212726F27000C933E0 /* face_id */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -148,6 +158,30 @@
 				FE957B1C2726EF7800C933E0 /* home.storyboard */,
 			);
 			path = storyboards;
+			sourceTree = "<group>";
+		};
+		FE957B1E2726F24F00C933E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE957B1F2726F24F00C933E0 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE957B212726F27000C933E0 /* face_id */ = {
+			isa = PBXGroup;
+			children = (
+				FE957B222726F28E00C933E0 /* FI_HomeViewController.swift */,
+			);
+			path = face_id;
+			sourceTree = "<group>";
+		};
+		FE957B242726F34D00C933E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE957B252726F39F00C933E0 /* FI_Helper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE957AED2726EEBF00C933E0 /* ViewController.swift in Sources */,
+				FE957B232726F28E00C933E0 /* FI_HomeViewController.swift in Sources */,
+				FE957B262726F39F00C933E0 /* FI_Helper.swift in Sources */,
 				FE957AE92726EEBF00C933E0 /* AppDelegate.swift in Sources */,
 				FE957AEB2726EEBF00C933E0 /* SceneDelegate.swift in Sources */,
 				FE957B1B2726EF5D00C933E0 /* HomeViewController.swift in Sources */,
